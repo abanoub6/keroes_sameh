@@ -798,7 +798,6 @@
                 top: 60px;
                 left: 0;
                 z-index: 1001;
-                /* زيادة z-index لضمان ظهور فوق المحتوى */
                 box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
             }
 
@@ -824,7 +823,6 @@
                 padding: 20px;
                 position: absolute;
                 top: calc(60px + 5 * 48px + 20px);
-                /* تحسين الموضع لتجنب التداخل */
                 left: 0;
                 z-index: 1001;
                 box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
@@ -840,7 +838,6 @@
                 top: 15px;
                 right: 15px;
                 z-index: 1002;
-                /* زيادة z-index للحمبرغر */
             }
 
             body.arabic .hamburger {
@@ -1004,8 +1001,10 @@
             <div class="detail">
                 <i class="fas fa-award icon"></i>
                 <h3 data-i18n="about-awards-title">الجوائز</h3>
-                <p data-i18n="about-awards-text">جائزة قائمة العميد للتفوق الأكاديمي (2023–2024) وجائزة أفضل أداء
-                    إكلينيكي.</p>
+                <p data-i18n="about-awards-text">تكريم من اتحاد طلاب كلية طب الأسنان (2023) للمشاركة في الفعاليات
+                    التوعوية الخاصة بصحة الفم والأسنان.<br>جائزة التميز الأكاديمي من إدارة الكلية (2022–2023) لحصولي على
+                    معدل مرتفع ضمن أعلى 10% من الدفعة.<br>شهادة مشاركة في حملة التوعية بصحة الفم – مدارس أسيوط (2024) عن
+                    جهدي التطوعي في نشر الوعي الصحي.</p>
             </div>
             <div class="detail">
                 <i class="fas fa-graduation-cap icon"></i>
@@ -1025,12 +1024,6 @@
                 <i class="fas fa-tooth icon"></i>
                 <h3 data-i18n="service-whitening-title">تبييض الأسنان</h3>
                 <p data-i18n="service-whitening-text">احصل على ابتسامة مشرقة مع جلسات التبييض الاحترافية لدينا.</p>
-            </div>
-            <div class="service">
-                <img src="assets/images/Braces.jpg" alt="تقويم الأسنان">
-                <i class="fas fa-braces icon"></i>
-                <h3 data-i18n="service-braces-title">تقويم الأسنان</h3>
-                <p data-i18n="service-braces-text">قم بتصحيح اصطفاف أسنانك باستخدام أحدث تقنيات تقويم الأسنان.</p>
             </div>
             <div class="service">
                 <img src="assets/images/Dental Implants.jpg" alt="زراعة الأسنان">
@@ -1096,21 +1089,6 @@
                     </div>
                 </div>
             </div>
-            <div class="gallery-item">
-                <span class="gallery-title" data-i18n="gallery-braces-title">تقويم الأسنان</span>
-                <div class="image-wrapper">
-                    <div class="image-container">
-                        <span class="image-label" data-i18n="gallery-before">قبل</span>
-                        <img src="assets/images/beforeBarces.png" alt="قبل تقويم الأسنان"
-                            onclick="openLightbox(this.src, this.alt)">
-                    </div>
-                    <div class="image-container">
-                        <span class="image-label" data-i18n="gallery-after">بعد</span>
-                        <img src="assets/images/afterBraces.png" alt="بعد تقويم الأسنان"
-                            onclick="openLightbox(this.src, this.alt)">
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
 
@@ -1166,14 +1144,12 @@
                 "about-expertise-title": "Expertise",
                 "about-expertise-text": "Clinical training in basic dental treatments and patient care.",
                 "about-awards-title": "Awards",
-                "about-awards-text": "Dean's List Award for Academic Excellence (2023–2024) and Best Clinical Performance Award.",
+                "about-awards-text": "Honored by the Student Union of the Faculty of Dentistry (2023) for participating in oral and dental health awareness events.<br>Academic Excellence Award from the Faculty Administration (2022–2023) for achieving a high GPA ranking among the top 10% of the class.<br>Certificate of Participation in Oral Health Awareness Campaign – Assiut Schools (2024) for voluntary efforts in promoting public health awareness.",
                 "about-education-title": "Education",
                 "about-education-text": "Bachelor of Dental Surgery from Sphinx University - Assiut, GPA: 3.9/4.0 with Honors.",
                 "services-title": "Our Services",
                 "service-whitening-title": "Teeth Whitening",
                 "service-whitening-text": "Achieve a dazzling smile with our professional whitening treatments.",
-                "service-braces-title": "Braces",
-                "service-braces-text": "Straighten your teeth with modern orthodontic solutions.",
                 "service-implants-title": "Dental Implants",
                 "service-implants-text": "Replace missing teeth with durable and natural-looking implants.",
                 "service-cleaning-title": "Cleaning",
@@ -1184,7 +1160,6 @@
                 "gallery-operative-title": "Filling Treatment",
                 "gallery-bridge-title": "Bridge Treatment",
                 "gallery-cleaning-title": "Teeth Cleaning",
-                "gallery-braces-title": "Braces",
                 "contact-title": "Contact Us",
                 "contact-name-placeholder": "Name",
                 "contact-email-placeholder": "Email",
@@ -1210,14 +1185,12 @@
                 "about-expertise-title": "الخبرة",
                 "about-expertise-text": "تدريب إكلينيكي في العلاجات السنية الأساسية ورعاية المرضى.",
                 "about-awards-title": "الجوائز",
-                "about-awards-text": "جائزة قائمة العميد للتفوق الأكاديمي (2023–2024) وجائزة أفضل أداء إكلينيكي.",
+                "about-awards-text": "تكريم من اتحاد طلاب كلية طب الأسنان (2023) للمشاركة في الفعاليات التوعوية الخاصة بصحة الفم والأسنان.<br>جائزة التميز الأكاديمي من إدارة الكلية (2022–2023) لحصولي على معدل مرتفع ضمن أعلى 10% من الدفعة.<br>شهادة مشاركة في حملة التوعية بصحة الفم – مدارس أسيوط (2024) عن جهدي التطوعي في نشر الوعي الصحي.",
                 "about-education-title": "التعليم",
                 "about-education-text": "بكالوريوس طب وجراحة الفم والأسنان من جامعة سفنكس - أسيوط، المعدل التراكمي: 3.9/4.0 مع مرتبة الشرف.",
                 "services-title": "خدماتنا",
                 "service-whitening-title": "تبييض الأسنان",
                 "service-whitening-text": "احصل على ابتسامة مشرقة مع جلسات التبييض الاحترافية لدينا.",
-                "service-braces-title": "تقويم الأسنان",
-                "service-braces-text": "قم بتصحيح اصطفاف أسنانك باستخدام أحدث تقنيات تقويم الأسنان.",
                 "service-implants-title": "زراعة الأسنان",
                 "service-implants-text": "استبدل الأسنان المفقودة بزراعات متينة وطبيعية المظهر.",
                 "service-cleaning-title": "تنظيف الأسنان",
@@ -1228,7 +1201,6 @@
                 "gallery-operative-title": "علاج الحشوات",
                 "gallery-bridge-title": "تركيبات",
                 "gallery-cleaning-title": "تنظيف الأسنان",
-                "gallery-braces-title": "تقويم الأسنان",
                 "contact-title": "تواصل معنا",
                 "contact-name-placeholder": "الاسم",
                 "contact-email-placeholder": "البريد الإلكتروني",
@@ -1256,7 +1228,7 @@
 
             document.querySelectorAll('[data-i18n]').forEach(element => {
                 const key = element.getAttribute('data-i18n');
-                element.textContent = translations[lang][key] || element.textContent;
+                element.innerHTML = translations[lang][key] || element.innerHTML;
             });
 
             document.querySelectorAll('[data-i18n-placeholder]').forEach(element => {
